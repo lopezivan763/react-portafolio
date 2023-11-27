@@ -39,9 +39,15 @@ function Main() {
             />
           </h2>
           <div className="flex justify-between pt-6 max-w-[100px] w-full">
-            <FaInstagram className="cursor-pointer" size={20} />
-            <FaLinkedinIn className="cursor-pointer" size={20} />
-            <FaGithub className="cursor-pointer" size={20} />
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="cursor-pointer" size={20} />
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn className="cursor-pointer" size={20} />
+        </a>
+        <a href="https://github.com/lopezivan763" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="cursor-pointer" size={20} />
+        </a>
           </div>
         </div>
       </div>
@@ -50,3 +56,5 @@ function Main() {
 }
 
 export default Main;
+
+

@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import mainImg from "../assets/main.png";
-import netflixImg from "../assets/Netflix.png";
-import taskImg from "../assets/task.png";
+import whatsInMeal from "../assets/meal.png";
+import wheaterApp from "../assets/weather.png";
 import zillowImg from "../assets/zillow.webp";
 
 const  Projects = () => {
@@ -19,13 +19,11 @@ const  Projects = () => {
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem img={mainImg} title='Get Sh*t Done' />
-        <ProjectItem img={netflixImg} title="What's in this Meal?" />
-        <ProjectItem img={taskImg} title='Task App' />
+        <ProjectItem img={whatsInMeal} title="What's in this Meal?" />
+        <ProjectItem img={wheaterApp} title='Live Weather' />
         <ProjectItem img={zillowImg} title='Zillow App' />
       </div>
     </div>
   );
   }
 export default Projects;
-
-
