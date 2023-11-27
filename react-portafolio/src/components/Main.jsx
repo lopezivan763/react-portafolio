@@ -23,7 +23,7 @@ function Main() {
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
                 "Coder",
                 1000,
-                "Tech Enthusiat",
+                "Tech Enthusiast",
                 1000,
                 "Jedi",
                 1000,
