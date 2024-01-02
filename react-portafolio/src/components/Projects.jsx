@@ -1,22 +1,43 @@
-import ProjectItem from "./ProjectItem";
-import mainImg from "../assets/main.png";
-import whatsInMeal from "../assets/meal.png";
-import wheaterApp from "../assets/weather.png";
-import zillowImg from "../assets/zillow.webp";
+import { useState } from 'react';
+import { Carousel } from 'react-responsive-carousel'; 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ProjectItem from './ProjectItem';
+import mainImg from '../assets/main.png';
+import whatsInMeal from '../assets/meal.png';
+import potfolioImg from '../assets/portfolio.png';
+import xperience from '../assets/xperience.png';
 
-const  Projects = () => {
+const Projects = () => {
+  const [activeProject, setActiveProject] = useState(0); 
+
+  
+  const projectItems = [
+    { img: xperience, title: 'Xperience' },
+    { img: mainImg, title: 'Get Sh*t Done' },
+    { img: whatsInMeal, title: "What's in this Meal?" },
+    { img: potfolioImg, title: 'Portfolio' },
+  ];
+  
+
   return (
-    <div className="max-w[1040px] m-auto md:pl-20 p-4 py-16 bg-gradient-to-r from-[#1F2833] via-[#0B0C10] to-[#1F2833]">
-      <h1 className="text-4xl font-bold text-center text-[#66FCF1] pb-4">
-        Projects
-      </h1>
-      <div className="grid sm:grid-cols-2 gap-12 m-4">
-        <ProjectItem img={mainImg} title='Get Sh*t Done' />
-        <ProjectItem img={whatsInMeal} title="What's in this Meal?" />
-        <ProjectItem img={wheaterApp} title='Live Weather' />
-        <ProjectItem img={zillowImg} title='Zillow App' />
-      </div>
+    <div className="max-w[1040px] flex justify-center items-center">
+    <div className="max-w[1040px] m-auto md:pl-20 p-10 py-10 bg-gradient-to-r from-[#1F2833] via-[#0B0C10] to-[#1F2833]">
+      <h1 className="text-4xl font-bold text-center text-[#66FCF1] pb-4">Projects</h1>
+      <Carousel
+        showArrows={true}
+        showStatus={false}
+        swipeable={true}
+        showThumbs={false} 
+        onChange={(index) => setActiveProject(index)} 
+        selectedItem={activeProject} 
+      >
+        {projectItems.map((item, index) => (
+          <ProjectItem key={index} img={item.img} title={item.title} />
+        ))}
+      </Carousel>
+    </div>
     </div>
   );
-  }
+};
+
 export default Projects;
