@@ -17,13 +17,13 @@ const data = [
     year: 2023,
     title: "Graduation",
     description:
-  'Graduated with a Computer Science and Mathematics degree as well as an Art degree.'
+  'I graduated with a dual degree in Computer Science and Mathematics, alongside an Art degree.'
 },
   {
     year: 2023,
     title: 'Full Stack Web Development Certificate',
     description:
-  'Completed full stack web development certificate at Northwestern University'},
+  'Completed the Full Stack Web Development Certificate at Northwestern University'},
 ];
 
 const Work = () => {

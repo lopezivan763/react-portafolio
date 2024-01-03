@@ -1,3 +1,4 @@
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState } from 'react';
 import Modal from 'react-modal';
 
@@ -80,14 +81,13 @@ const ProjectItem = ({ img, title }) => {
         style={customStyles}
         ariaHideApp={false}
       >
-        {/* Modal content */}
         <div className="modal-content">
           <span className="close" onClick={toggleModal}>&times;</span>
           <h2 className="text-2xl font-bold mb-4">{title}</h2>
           <p className='text-white'><strong></strong> {projectInfo[title]?.description}</p>
           <p className='text-[#C5C6C7]'><strong>Tech Used:</strong> {projectInfo[title]?.techUsed}</p>
-          <a href={projectInfo[title]?.url} target="_blank" rel="noopener noreferrer">
-            Run it
+          <a href={projectInfo[title]?.url} target="_blank" rel="noopener noreferrer" className='flex items-center text-[#66FCF1] mt-2'>
+            Visit <FaExternalLinkAlt className='ml-1' />
           </a>
         </div>
       </Modal>
