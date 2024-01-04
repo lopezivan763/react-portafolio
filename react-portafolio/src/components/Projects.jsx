@@ -20,7 +20,7 @@ const Projects = () => {
   
 
   return (
-    <div className="max-w[1040px] flex justify-center items-center">
+    <div className="flex justify-center items-center">
     <div className="max-w[1040px] m-auto md:pl-20 p-10 py-10 bg-gradient-to-r from-[#1F2833] via-[#0B0C10] to-[#1F2833]">
       <h1 className="text-4xl font-bold text-center text-[#66FCF1] pb-4">Projects</h1>
       <Carousel

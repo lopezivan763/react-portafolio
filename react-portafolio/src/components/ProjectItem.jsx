@@ -56,7 +56,7 @@ const ProjectItem = ({ img, title }) => {
   };
 
   return (
-    <div className='relative flex items-center justify-center h-[300px] w-full rounded-xl group overflow-hidden'>
+    <div className='max-w[1040px] relative flex items-center justify-center h-[300px] rounded-xl group overflow-hidden'>
       <img
         src={img}
         alt="/"
