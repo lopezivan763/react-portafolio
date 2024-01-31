@@ -26,7 +26,7 @@ const Sidenav = ({
   };
 
   const handleLinkClick = () => {
-    window.open('https://docs.google.com/document/d/13X5ZvSYL3RmjLMDFltpGpRQteaYlsFfIua6kug4fMww/preview', '_blank');
+    window.open('https://docs.google.com/document/d/1xfRC2BV2e38t-V5vIApSVzNYu5Lal5fDsJIccsNjqi4/preview', '_blank');
   };
 
   return (

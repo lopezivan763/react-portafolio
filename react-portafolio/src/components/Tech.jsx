@@ -33,7 +33,7 @@ const Tech = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#66FCF1]">
         Tech
       </h1>
-      <div className="max-w-[1040px] flex flex-wrap items-center justify-center gap-4">
+      <div className="max-w[1040px] flex flex-wrap items-center justify-center gap-4">
         <div className="flex flex-wrap justify-center gap-4">
           {firstLine.map((techElement, index) => (
             <span key={index} className="text-[#C5C6C7]/90 bg-[#66FCF1]/20 p-2 rounded-full hover:bg-[#66FCF1]">

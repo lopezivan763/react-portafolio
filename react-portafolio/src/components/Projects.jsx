@@ -6,12 +6,14 @@ import mainImg from '../assets/main.png';
 import whatsInMeal from '../assets/meal.png';
 import potfolioImg from '../assets/portfolio.png';
 import xperience from '../assets/xperience.png';
+import tornado from '../assets/tornado.png';
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0); 
 
   
   const projectItems = [
+    { img: tornado, title: 'Tornado Tire Shop'},
     { img: xperience, title: 'Xperience' },
     { img: mainImg, title: 'Get Sh*t Done' },
     { img: whatsInMeal, title: "What's in this Meal?" },

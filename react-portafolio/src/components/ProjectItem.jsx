@@ -26,10 +26,20 @@ const customStyles = {
 };
 
 const projectInfo = {
+  'Tornado Tire Shop': {
+    description: 'Business website with scalability in mind that utilized JavaScript with React Frameworks. Business website with scalability in mind that utilized JavaScript with React Frameworks. Responsive and mobile-friendly design using Tailwind CSS.',
+    techUsed: 'Built with React and tailwind.',
+    url: 'https://65babe6748c2cd24e541afac--glittery-travesseiro-daee97.netlify.app/',
+  },
+  'Xperience': {
+    description: 'Explore and uncover fresh experiences, as well as share them with others using this dynamic blog application.',
+    techUsed: 'MERN stack and Tailwind',
+    url: 'https://frozen-escarpment-08349-5cbe8ef4d25f.herokuapp.com/',
+  },
   'Get Sh*t Done': {
     description: 'Login, create and manage your tasks efficiently by assigning personalized tag labels. Categorize your tasks based on priority, deadlines, or custom criteria that suit your workflow',
     techUsed: 'Express, JavaScript, Handlebars, Sequalize, MySQL.',
-    url: 'https://peaceful-beach-14774-2857744df451.herokuapp.com/',
+    url: 'https://social-tast-app-bbbf51cc09c5.herokuapp.com/',
   },
   "What's in this Meal?": {
     description: 'An app providing comprehensive nutritional details for a diverse range of meals and recipes.',
@@ -40,11 +50,6 @@ const projectInfo = {
     description: 'Modern and styled portfolio',
     techUsed: 'Built with React and tailwind',
     url: 'https://www.ivan-lopez-dev.com/',
-  },
-  'Xperience': {
-    description: 'Explore and uncover fresh experiences, as well as share them with others using this dynamic blog application.',
-    techUsed: 'MERN stack and Tailwind',
-    url: 'https://frozen-escarpment-08349-5cbe8ef4d25f.herokuapp.com/',
   },
 };
 
@@ -61,7 +66,7 @@ const ProjectItem = ({ img, title }) => {
         src={img}
         alt="/"
         className='rounded-xl group-hover:opacity-20 object-cover'
-        style={{ height: '100%', width: '100%' }}
+        style={{ height: '100%', width: '90%' }}
       />
       <div
         className='hidden group-hover:flex flex-col items-center justify-center absolute inset-0 cursor-pointer'
